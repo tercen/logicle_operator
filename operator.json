@@ -12,5 +12,54 @@
   "urls": [
     "https://github.com/tercen/logicle_operator"
   ],
-  "properties": []
+  "properties": [],
+  "operatorSpec": {
+      "kind": "OperatorSpec",
+      "ontologyUri": "https://tercen.com/_ontology/tercen",
+      "ontologyVersion": "0.0.1",
+      "inputSpecs": [
+          {
+              "kind": "CrosstabSpec",
+              "metaFactors": [
+                  {
+                      "kind": "MetaFactor",
+                      "name": "Channel",
+                      "type": "",
+                      "description": "The variables",
+                      "ontologyMapping": "page",
+                      "crosstabMapping": "row",
+                      "cardinality": "1",
+                      "factors": []
+                  },
+                  {
+                      "kind": "MetaFactor",
+                      "name": "event ID",
+                      "type": "",
+                      "description": "the observations",
+                      "ontologyMapping": "sample",
+                      "crosstabMapping": "column",
+                      "cardinality": "1",
+                      "factors": []
+                  }
+              ],
+              "axis": [
+                  {
+                      "kind": "AxisSpec",
+                      "metaFactors": [
+                          {
+                              "kind": "MetaFactor",
+                              "name": "measurement",
+                              "type": "numeric",
+                              "description": "the measurements",
+                              "ontologyMapping": "y-axis",
+                              "crosstabMapping": "y",
+                              "cardinality": "1",
+                              "factors": []
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+  }
 }
