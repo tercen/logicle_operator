@@ -27,7 +27,7 @@
                       "type": "",
                       "description": "The variables",
                       "ontologyMapping": "page",
-                      "crosstabMapping": "row",
+                      "crosstabMapping": "column",
                       "cardinality": "1",
                       "factors": []
                   },
@@ -37,7 +37,7 @@
                     "type": "",
                     "description": "Describes the channel",
                     "ontologyMapping": "page",
-                    "crosstabMapping": "row",
+                    "crosstabMapping": "column",
                     "cardinality": "",
                     "factors": []
                 },
@@ -47,7 +47,7 @@
                       "type": "",
                       "description": "the observations",
                       "ontologyMapping": "sample",
-                      "crosstabMapping": "column",
+                      "crosstabMapping": "row",
                       "cardinality": "1",
                       "factors": []
                   }
