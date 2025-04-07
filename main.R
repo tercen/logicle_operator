@@ -6,7 +6,7 @@ suppressPackageStartupMessages({
 
 ctx = tercenCtx()
 
-df <- ctx %>% as.matrix() %>% t
+df <- ctx %>% as.matrix()
 rn <- ctx$rselect() %>% tidyr::unite("label")
 colnames(df) <- rn$label
 rownames(df) <- 1:nrow(df)
