@@ -32,6 +32,16 @@
                       "factors": []
                   },
                   {
+                    "kind": "MetaFactor",
+                    "name": "Channel description",
+                    "type": "",
+                    "description": "Describes the channel",
+                    "ontologyMapping": "page",
+                    "crosstabMapping": "row",
+                    "cardinality": "",
+                    "factors": []
+                },
+                  {
                       "kind": "MetaFactor",
                       "name": "event ID",
                       "type": "",
