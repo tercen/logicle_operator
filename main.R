@@ -4,12 +4,6 @@ suppressPackageStartupMessages({
   library(flowCore)
 })
 
-library(tercen)
-library(dplyr)
-
-options("tercen.workflowId" = "WORKFLOWID")
-options("tercen.stepId"     = "DATASTEPID")
-
 ctx = tercenCtx()
 
 df <- ctx %>% as.matrix()
