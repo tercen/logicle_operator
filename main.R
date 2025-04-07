@@ -4,12 +4,19 @@ suppressPackageStartupMessages({
   library(flowCore)
 })
 
+library(tercen)
+library(dplyr)
+
+options("tercen.workflowId" = "WORKFLOWID")
+options("tercen.stepId"     = "DATASTEPID")
+
 ctx = tercenCtx()
 
 df <- ctx %>% as.matrix()
 rn <- ctx$rselect() %>% tidyr::unite("label")
+
+colnames(df) <- 1:ncol(df)
 rownames(df) <- rn$label
-colnames(df) <- 1:nrow(df)
 
 ff <- tim::matrix_to_flowFrame(df)
 pars <- flowCore::estimateLogicle(ff, channels = rn$label)
