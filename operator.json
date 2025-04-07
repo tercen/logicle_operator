@@ -25,7 +25,7 @@
                       "kind": "MetaFactor",
                       "name": "Channel",
                       "type": "",
-                      "description": "The variables",
+                      "description": "The channel name",
                       "ontologyMapping": "page",
                       "crosstabMapping": "column",
                       "cardinality": "1",
@@ -33,9 +33,9 @@
                   },
                   {
                     "kind": "MetaFactor",
-                    "name": "Channel description",
+                    "name": "Description",
                     "type": "",
-                    "description": "Describes the channel",
+                    "description": "The channel description",
                     "ontologyMapping": "page",
                     "crosstabMapping": "column",
                     "cardinality": "",
@@ -58,7 +58,7 @@
                       "metaFactors": [
                           {
                               "kind": "MetaFactor",
-                              "name": "measurement",
+                              "name": "data",
                               "type": "numeric",
                               "description": "the measurements",
                               "ontologyMapping": "y-axis",
