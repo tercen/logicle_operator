@@ -13,7 +13,8 @@ colnames(df) <- 1:ncol(df)
 rownames(df) <- rn$label
 
 ff <- tim::matrix_to_flowFrame(df)
-pars <- flowCore::estimateLogicle(ff, channels = rn$label)
+
+pars <- flowCore::estimateLogicle(ff, channels = 1:ncol(df))
 fs_trans <- transform(ff, pars)
 
 df_out <- exprs(fs_trans)
