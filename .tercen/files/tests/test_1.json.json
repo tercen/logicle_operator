@@ -1,0 +1,42 @@
+{
+ "kind": "FileDocument",
+ "id": "tests/test_1.json",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "test_1.json",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "4",
+ "dataUri": "lfs/36/fe/2e4065dd24663a4f861c2c4ccfca175e31670c1a951390dc3ac0d86fa252",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 407
+}
