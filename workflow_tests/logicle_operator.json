@@ -4,7 +4,7 @@
  "isDeleted": false,
  "rev": "",
  "description": "",
- "name": "phenograph_operator",
+ "name": "logicle_operator",
  "acl": {
   "kind": "Acl",
   "owner": "",
@@ -499,7 +499,7 @@
    "kind": "DataStep",
    "id": "3601841d-dad3-44fb-8da8-0c3e9086a04c",
    "groupId": "",
-   "name": "PhenoGraph",
+   "name": "logicle",
    "inputs": [
     {
      "kind": "InputPort",
@@ -709,7 +709,7 @@
      "namespace": "ds1",
      "operatorRef": {
       "kind": "OperatorRef",
-      "name": "PhenoGraph",
+      "name": "logicle",
       "version": "3b676bc21cc36f0dd1a3f1598c69805ead144edb",
       "operatorId": "1",
       "operatorKind": "ROperator",
@@ -732,7 +732,7 @@
       ],
       "url": {
        "kind": "Url",
-       "uri": "https://github.com/tercen/phenograph_operator"
+       "uri": "https://github.com/tercen/logicle_operator"
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
