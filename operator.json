@@ -12,6 +12,7 @@
   "urls": [
     "https://github.com/tercen/logicle_operator"
   ],
+  "container":"ghcr.io/tercen/logicle_operator:specs",
   "properties": [],
   "operatorSpec": {
     "kind": "OperatorSpec",
