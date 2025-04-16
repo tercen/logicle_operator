@@ -93,81 +93,16 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "Select a data set.",
    "model": {
     "kind": "TableStepModel",
     "relation": {
-     "kind": "RenameRelation",
-     "id": "rename_d1adb1d8-55f8-416b-aa1e-9314af413e8d",
-     "relation": {
-      "kind": "InMemoryRelation",
-      "id": "dc595a11-87de-4481-b982-81ab64fed247",
-      "inMemoryTable": {
-       "kind": "Table",
-       "nRows": 1,
-       "properties": {
-        "kind": "TableProperties",
-        "name": "",
-        "sortOrder": [],
-        "ascending": true
-       },
-       "columns": [
-        {
-         "kind": "Column",
-         "id": "documentId",
-         "name": "documentId",
-         "type": "string",
-         "nRows": 1,
-         "size": -1,
-         "metaData": {
-          "kind": "ColumnSchemaMetaData",
-          "sort": [],
-          "ascending": true,
-          "quartiles": [],
-          "properties": []
-         },
-         "cValues": {
-          "kind": "CValues"
-         },
-         "values": [
-          "af528d1f-d4c6-43d3-bf8a-5cb3be25cd17"
-         ]
-        },
-        {
-         "kind": "Column",
-         "id": ".documentId",
-         "name": ".documentId",
-         "type": "string",
-         "nRows": 1,
-         "size": -1,
-         "metaData": {
-          "kind": "ColumnSchemaMetaData",
-          "sort": [],
-          "ascending": true,
-          "quartiles": [],
-          "properties": []
-         },
-         "cValues": {
-          "kind": "CValues"
-         },
-         "values": [
-          "workflow_tests/FCS Files.zip"
-         ]
-        }
-       ]
-      }
-     },
-     "inNames": [
-      "documentId",
-      ".documentId"
-     ],
-     "outNames": [
-      "documentId",
-      ".documentId"
-     ]
+     "kind": "UnionRelation",
+     "id": "2f8f95e0-940d-4eb1-9c45-b3781035f16f",
+     "relations": []
     },
     "filterSelector": ""
    }
@@ -208,9 +143,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "9c7d8ff0f9484351e2feba3181251578",
+    "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "",
@@ -441,98 +376,8 @@
     "taskId": ""
    },
    "computedRelation": {
-    "kind": "CompositeRelation",
-    "id": "981c63d3-d1a5-4033-a7cf-4c203aa61448",
-    "joinOperators": [
-     {
-      "kind": "JoinOperator",
-      "joinType": "",
-      "leftPair": {
-       "kind": "ColumnPair",
-       "lColumns": [],
-       "rColumns": []
-      },
-      "rightRelation": {
-       "kind": "CompositeRelation",
-       "id": "d0f5de1b-e448-497c-b7bd-497791520474",
-       "joinOperators": [
-        {
-         "kind": "JoinOperator",
-         "joinType": "",
-         "leftPair": {
-          "kind": "ColumnPair",
-          "lColumns": [
-           "event_id"
-          ],
-          "rColumns": [
-           "event_id"
-          ]
-         },
-         "rightRelation": {
-          "kind": "SimpleRelation",
-          "id": "becbdb576074c0e05fb9cbb1df7682abafd3906f2ca5480145bbe35a4a15342f",
-          "index": 0
-         }
-        },
-        {
-         "kind": "JoinOperator",
-         "joinType": "",
-         "leftPair": {
-          "kind": "ColumnPair",
-          "lColumns": [
-           "channel_id"
-          ],
-          "rColumns": [
-           "channel_id"
-          ]
-         },
-         "rightRelation": {
-          "kind": "SimpleRelation",
-          "id": "a0b3a6565a0c7cde02d433ac475faba50673779e64491fc57e1ee9a38d60a6f1",
-          "index": 0
-         }
-        }
-       ],
-       "mainRelation": {
-        "kind": "SimpleRelation",
-        "id": "f11c251acbabf8f4e36657618a483a8b2a3f386aca38f863399e4ffd42b299ad",
-        "index": 0
-       }
-      }
-     },
-     {
-      "kind": "JoinOperator",
-      "joinType": "",
-      "leftPair": {
-       "kind": "ColumnPair",
-       "lColumns": [],
-       "rColumns": []
-      },
-      "rightRelation": {
-       "kind": "SimpleRelation",
-       "id": "e2ac344d60f1cf12ad4f480a26c9bbc8a08b8c87cd208b8c7538ba186a1c03be",
-       "index": 0
-      }
-     },
-     {
-      "kind": "JoinOperator",
-      "joinType": "",
-      "leftPair": {
-       "kind": "ColumnPair",
-       "lColumns": [],
-       "rColumns": []
-      },
-      "rightRelation": {
-       "kind": "SimpleRelation",
-       "id": "459880acf8af1d13734c7729f32a03e6956d8f182b91bd0b85712144dbdbba05",
-       "index": 0
-      }
-     }
-    ],
-    "mainRelation": {
-     "kind": "Relation",
-     "id": "b2603e6a-f5e5-4d3c-b2ff-d2b5f8f2884f"
-    }
+    "kind": "Relation",
+    "id": "c60e46b0-75d2-4e45-9919-bac7c1a78485"
    },
    "parentDataStepId": ""
   },
@@ -567,30 +412,16 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "Select a data set.",
    "model": {
     "kind": "TableStepModel",
     "relation": {
-     "kind": "RenameRelation",
-     "id": "rename_9c7d8ff0f9484351e2feba318124de31",
-     "relation": {
-      "kind": "SimpleRelation",
-      "id": "823cd69cd566a78f43920f5d6e9347e05d8360cce8fc68006ae15b44adaf490a",
-      "index": 0
-     },
-     "inNames": [
-      "filename",
-      "Condition",
-      "823cd69cd566a78f43920f5d6e9347e05d8360cce8fc68006ae15b44adaf490a._rids"
-     ],
-     "outNames": [
-      "filename",
-      "Condition",
-      "rowId"
-     ]
+     "kind": "UnionRelation",
+     "id": "c9fe3bcd-35e0-4355-99ff-0b5a191c2942",
+     "relations": []
     },
     "filterSelector": ""
    }
@@ -639,7 +470,7 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "Join two data sets.",
@@ -662,23 +493,7 @@
     "rightPrefix": "js0",
     "joinType": ""
    },
-   "rightAttributes": [
-    {
-     "kind": "Attribute",
-     "name": "filename",
-     "type": "string"
-    },
-    {
-     "kind": "Attribute",
-     "name": "Condition",
-     "type": "string"
-    },
-    {
-     "kind": "Attribute",
-     "name": "rowId",
-     "type": "int32"
-    }
-   ]
+   "rightAttributes": []
   },
   {
    "kind": "DataStep",
@@ -716,9 +531,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "9c7d8ff0f9484351e2feba3181271396",
+    "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "",
@@ -992,116 +807,8 @@
     "taskId": ""
    },
    "computedRelation": {
-    "kind": "CompositeRelation",
-    "id": "dd4b9e87-7106-4a39-ae42-a23aa6f62b34",
-    "joinOperators": [
-     {
-      "kind": "JoinOperator",
-      "joinType": "",
-      "leftPair": {
-       "kind": "ColumnPair",
-       "lColumns": [
-        "channel_name",
-        "channel_description",
-        "event_id"
-       ],
-       "rColumns": [
-        "channel_name",
-        "channel_description",
-        "event_id"
-       ]
-      },
-      "rightRelation": {
-       "kind": "RenameRelation",
-       "id": "27e9ca4c-6477-4faf-b899-28d571260382",
-       "relation": {
-        "kind": "CompositeRelation",
-        "id": "ae0406c8-d8ce-48c5-ad34-e6e359db0b72",
-        "joinOperators": [
-         {
-          "kind": "JoinOperator",
-          "joinType": "",
-          "leftPair": {
-           "kind": "ColumnPair",
-           "lColumns": [
-            ".ci"
-           ],
-           "rColumns": [
-            "9665e1fc65575919fca5974494564d041da2e87900cc1593b3589c500454814e._rids"
-           ]
-          },
-          "rightRelation": {
-           "kind": "SimpleRelation",
-           "id": "9665e1fc65575919fca5974494564d041da2e87900cc1593b3589c500454814e",
-           "index": 0
-          }
-         },
-         {
-          "kind": "JoinOperator",
-          "joinType": "",
-          "leftPair": {
-           "kind": "ColumnPair",
-           "lColumns": [
-            ".ri"
-           ],
-           "rColumns": [
-            "60f44131b2ac4530a3d42ffd873ecff6c07454c8219ccbf3a5383fa338e930b3._rids"
-           ]
-          },
-          "rightRelation": {
-           "kind": "SimpleRelation",
-           "id": "60f44131b2ac4530a3d42ffd873ecff6c07454c8219ccbf3a5383fa338e930b3",
-           "index": 0
-          }
-         }
-        ],
-        "mainRelation": {
-         "kind": "SimpleRelation",
-         "id": "40914f9bb975495e5a6dabd80b5b7bca4ed7a42c9c52c3a1721913e6f1ec6f61",
-         "index": 0
-        }
-       },
-       "inNames": [
-        ".ri",
-        ".ci",
-        "ds1.value",
-        "40914f9bb975495e5a6dabd80b5b7bca4ed7a42c9c52c3a1721913e6f1ec6f61._rids",
-        "40914f9bb975495e5a6dabd80b5b7bca4ed7a42c9c52c3a1721913e6f1ec6f61.tlbId",
-        "channel_name",
-        "channel_description",
-        "9665e1fc65575919fca5974494564d041da2e87900cc1593b3589c500454814e._rids",
-        "9665e1fc65575919fca5974494564d041da2e87900cc1593b3589c500454814e.tlbId",
-        "event_id",
-        "60f44131b2ac4530a3d42ffd873ecff6c07454c8219ccbf3a5383fa338e930b3._rids",
-        "60f44131b2ac4530a3d42ffd873ecff6c07454c8219ccbf3a5383fa338e930b3.tlbId",
-        "channel_name",
-        "channel_description",
-        "event_id"
-       ],
-       "outNames": [
-        ".ri",
-        ".ci",
-        "ds1.value",
-        "40914f9bb975495e5a6dabd80b5b7bca4ed7a42c9c52c3a1721913e6f1ec6f61._rids",
-        "40914f9bb975495e5a6dabd80b5b7bca4ed7a42c9c52c3a1721913e6f1ec6f61.tlbId",
-        "channel_name",
-        "channel_description",
-        "9665e1fc65575919fca5974494564d041da2e87900cc1593b3589c500454814e._rids",
-        "9665e1fc65575919fca5974494564d041da2e87900cc1593b3589c500454814e.tlbId",
-        "event_id",
-        "60f44131b2ac4530a3d42ffd873ecff6c07454c8219ccbf3a5383fa338e930b3._rids",
-        "60f44131b2ac4530a3d42ffd873ecff6c07454c8219ccbf3a5383fa338e930b3.tlbId",
-        "ds1..channel_name",
-        "ds1..channel_description",
-        "ds1..event_id"
-       ]
-      }
-     }
-    ],
-    "mainRelation": {
-     "kind": "Relation",
-     "id": "c0a19fc7-b1e1-452e-aa9b-b4b3e5c8dda5"
-    }
+    "kind": "Relation",
+    "id": "0f13fdd7-c0d3-43ac-a503-9e31b2c67f98"
    },
    "parentDataStepId": ""
   },
@@ -1141,9 +848,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "9c7d8ff0f9484351e2feba3181276c0d",
+    "taskId": "",
     "taskState": {
-     "kind": "DoneState"
+     "kind": "InitState"
     }
    },
    "description": "Perform computation on user defined projection.",
@@ -1389,7 +1096,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "f6d961be-4e04-4c43-bd34-c7b8e6946257"
+    "id": "56571226-5603-4fba-a510-c6802283df7b"
    },
    "parentDataStepId": ""
   }
