@@ -1,0 +1,243 @@
+{
+ "kind": "ComputedTableSchema",
+ "id": "c29e9e7075cfadc706f838410b293269b4482555214a5f12a3273b7256683038",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "Observations",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "c29e9e7075cfadc706f838410b293269b4482555214a5f12a3273b7256683038"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 4000,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "c54c6153-f26b-4a0c-bbd5-bb57d78466c7",
+   "name": "event_id",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "0a668f12-c31e-4e52-8d47-8eab48667532",
+   "name": "filename",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/c2/9e/c29e9e7075cfadc706f838410b293269b4482555214a5f12a3273b7256683038",
+ "relation": {
+  "kind": "Relation",
+  "id": "cda2fde1-8e08-4f38-9c76-430d77469b0b"
+ },
+ "size": 20904,
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "RenameRelation",
+   "id": "ea3d3de3-2ed0-48b4-823d-f16708d8c2db",
+   "relation": {
+    "kind": "InMemoryRelation",
+    "id": "800b1eab-394c-4f18-bf79-0772c2adf11b",
+    "inMemoryTable": {
+     "kind": "Table",
+     "nRows": 1,
+     "properties": {
+      "kind": "TableProperties",
+      "name": "",
+      "sortOrder": [],
+      "ascending": true
+     },
+     "columns": [
+      {
+       "kind": "Column",
+       "id": "documentId",
+       "name": "documentId",
+       "type": "string",
+       "nRows": 1,
+       "size": -1,
+       "metaData": {
+        "kind": "ColumnSchemaMetaData",
+        "sort": [],
+        "ascending": true,
+        "quartiles": [],
+        "properties": []
+       },
+       "cValues": {
+        "kind": "CValues"
+       },
+       "values": [
+        "e58a9402-37f1-4649-8a86-653dd4166e43"
+       ]
+      },
+      {
+       "kind": "Column",
+       "id": ".documentId",
+       "name": ".documentId",
+       "type": "string",
+       "nRows": 1,
+       "size": -1,
+       "metaData": {
+        "kind": "ColumnSchemaMetaData",
+        "sort": [],
+        "ascending": true,
+        "quartiles": [],
+        "properties": []
+       },
+       "cValues": {
+        "kind": "CValues"
+       },
+       "values": [
+        "workflow_tests/FCS Files.zip"
+       ]
+      }
+     ]
+    }
+   },
+   "inNames": [
+    "documentId",
+    ".documentId"
+   ],
+   "outNames": [
+    "documentId",
+    ".documentId"
+   ]
+  },
+  "colColumns": [
+   {
+    "kind": "Factor",
+    "name": "documentId",
+    "type": "string"
+   }
+  ],
+  "rowColumns": [],
+  "axisQueries": [
+   {
+    "kind": "CubeAxisQuery",
+    "pointSize": 4,
+    "chartType": "point",
+    "yAxis": {
+     "kind": "Factor",
+     "name": "",
+     "type": "string"
+    },
+    "yAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "xAxis": {
+     "kind": "Factor",
+     "name": "",
+     "type": "string"
+    },
+    "xAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "errors": [],
+    "labels": [],
+    "colors": [],
+    "preprocessors": []
+   }
+  ],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": []
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "ds0",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "FCS",
+    "version": "2.4.0",
+    "operatorId": "0",
+    "operatorKind": "ROperator",
+    "propertyValues": [
+     {
+      "kind": "PropertyValue",
+      "name": "which.lines",
+      "value": "-1"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "gather_channels",
+      "value": "true"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "ungather_pattern",
+      "value": "?!(.ci|Time|FSC[-_]?[AWH]?|SSC[-_]?[AWH]??|SSC-B[-_]?[AWH]?|Width|Height|Area|Event[-_]?ID|Trigger[-_]?Pulse)"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "truncate_max_range",
+      "value": "true"
+     }
+    ],
+    "url": {
+     "kind": "Url",
+     "uri": "https://github.com/tercen/read_fcs_operator"
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "",
+     "ontologyVersion": "",
+     "inputSpecs": [],
+     "outputSpecs": []
+    }
+   },
+   "environment": [],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}

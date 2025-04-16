@@ -1,0 +1,250 @@
+{
+ "kind": "ComputedTableSchema",
+ "id": "16b6adeec2b0ef04a567be86d0648aa7eb839734469e5c01c6bc440458356d61",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "73695310-1a9f-11f0-9797-a957102c1d69",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "16b6adeec2b0ef04a567be86d0648aa7eb839734469e5c01c6bc440458356d61"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 188000,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "e6c75a69-f7db-464d-a558-b909164ee832",
+   "name": ".ri",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "74f9f54c-5e71-4fdf-a234-1f7511f11f75",
+   "name": ".ci",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "b0fadbee-bcaa-4e91-85d5-d26793ac7a38",
+   "name": "ds1.value",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/16/b6/16b6adeec2b0ef04a567be86d0648aa7eb839734469e5c01c6bc440458356d61",
+ "relation": {
+  "kind": "Relation",
+  "id": "1ca1f513-e326-4739-890a-bc886c12875e"
+ },
+ "size": 1700128,
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "CompositeRelation",
+   "id": "0abae31c-e5c1-45ee-ae31-c81d2cef9bb5",
+   "joinOperators": [
+    {
+     "kind": "JoinOperator",
+     "joinType": "leftOuter",
+     "leftPair": {
+      "kind": "ColumnPair",
+      "lColumns": [
+       "channel_id"
+      ],
+      "rColumns": [
+       "channel_id"
+      ]
+     },
+     "rightRelation": {
+      "kind": "SimpleRelation",
+      "id": "9f7380f1eab8e46a27786f67be65c6b03e280d29b5dada5e072df15fe7c5e812",
+      "index": 1
+     }
+    }
+   ],
+   "mainRelation": {
+    "kind": "SimpleRelation",
+    "id": "6fcdd4cc6da44a83605f973efa5a98462becedb7d4ec11a4d7ad066d90852180",
+    "index": 0
+   }
+  },
+  "colColumns": [
+   {
+    "kind": "Factor",
+    "name": "channel_name",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "channel_description",
+    "type": "string"
+   }
+  ],
+  "rowColumns": [
+   {
+    "kind": "Factor",
+    "name": "event_id",
+    "type": "double"
+   }
+  ],
+  "axisQueries": [
+   {
+    "kind": "CubeAxisQuery",
+    "pointSize": 4,
+    "chartType": "point",
+    "yAxis": {
+     "kind": "Factor",
+     "name": "value",
+     "type": "double"
+    },
+    "yAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "xAxis": {
+     "kind": "Factor",
+     "name": "",
+     "type": "string"
+    },
+    "xAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "errors": [],
+    "labels": [],
+    "colors": [],
+    "preprocessors": []
+   }
+  ],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": []
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "ds1",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "Logicle",
+    "version": "ca6ec8fc51469f044951683202110cf209839464",
+    "operatorId": "1",
+    "operatorKind": "ROperator",
+    "propertyValues": [],
+    "url": {
+     "kind": "Url",
+     "uri": "https://github.com/tercen/logicle_operator"
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "https://tercen.com/_ontology/tercen",
+     "ontologyVersion": "0.0.1",
+     "inputSpecs": [
+      {
+       "kind": "CrosstabSpec",
+       "metaFactors": [
+        {
+         "kind": "MetaFactor",
+         "name": "Channel",
+         "type": "",
+         "description": "The channel identifiers",
+         "ontologyMapping": "variable",
+         "crosstabMapping": "column",
+         "cardinality": "1..n",
+         "factors": []
+        },
+        {
+         "kind": "MetaFactor",
+         "name": "events",
+         "type": "",
+         "description": "the observations",
+         "ontologyMapping": "observation",
+         "crosstabMapping": "row",
+         "cardinality": "1..n",
+         "factors": []
+        }
+       ],
+       "axis": [
+        {
+         "kind": "AxisSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "data",
+           "type": "numeric",
+           "description": "the measurements",
+           "ontologyMapping": "measurement",
+           "crosstabMapping": "y",
+           "cardinality": "1",
+           "factors": []
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "outputSpecs": []
+    }
+   },
+   "environment": [],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}
